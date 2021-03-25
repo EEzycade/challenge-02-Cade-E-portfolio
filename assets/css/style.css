@@ -1,0 +1,79 @@
+:root {
+    --primaryColor: turquoise;
+    --secondaryColor: #404040;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    padding: 20px 30px;
+    background-color: var(--primaryColor);
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: #404040;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.section-title {
+    color: turquoise;
+    font-size: 48px;
+    font-weight: bolder;
+    /* margin-left: 20px; */
+}
+/* consolidate later */
+.about-me {
+    background-color: var(--secondaryColor);
+}
+
+.my-work {
+    background-color: var(--secondaryColor);
+}
+
+.contact-me {
+    background-color: var(--secondaryColor);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.flex-item {
+    padding: 20px 10px;
+}
+
+.flex-container h2 {
+    align-items: auto;
+    text-align: right;
+    padding-left: 100px;
+}
+
+.flex-container img {
+    align-items: auto;
+}
+
+.flex-container p {
+    align-items: flex-end;
+}
+
+.my-work-container {
+    display: flex;
+}

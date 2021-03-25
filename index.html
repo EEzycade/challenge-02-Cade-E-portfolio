@@ -5,18 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cade's Professional Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Cade Ellsworth</title>
 </head>
 
 <body>
 
     <header>
+
+        <h1>
+            <a href="./index.html">
+                Cade Ellsworth
+            </a>
+        </h1>
+
         <nav>
-            <!-- Unordered list element -->
+
             <ul>
-                <!-- List item element-->
                 <li>
-                    <!-- Anchor element -->
                     <a href="#about-me">About Me</a>
                 </li>
                 <li>
@@ -26,26 +32,73 @@
                     <a href="#contact-me">Contact Me</a>
                 </li>
             </ul>
+
         </nav>
-        <a href="./index.html">
-            <h1>Cade's Portfolio</h1>
-        </a>
+
     </header>
 
     <section id="hero">
-        Hero
+
     </section>
 
-    <section id="about-me">
-        About Me
+    <section id="about-me" class="about-me">
+
+        <div class="flex-container">
+            <h2 class="section-title flex-item">
+                About Me
+            </h2>
+
+            <img class="flex-item" src="./assets/images/IMG_4492.JPG"
+                alt="Cade Ellsworth smiling at the camera while wwearing a light blue short-sleeved button up shirt with a deep blue tie."
+                width="349" height="518" />
+
+            <p class="flex-item">
+                Hi! I'm Cade. I'm currently attending UofA Coding Boot Camp to obtain my certificate of completion and
+                become a full-stack web developer.
+            </p>
+        </div>
+
     </section>
 
-    <section id="my-work">
-        My Work
+    <section id="my-work" class="my-work">
+        <div class="my-work-container">
+            <h2 class="section-title flex-item">
+                My Work
+            </h2>
+
+            <a class="flex-item" href="https://eezycade.github.io/run-buddy/">
+                <img src="./assets/images/run-buddy-thumbnail.png" width="560" height="360" />
+            </a>
+
+            <a href="https://eezycade.github.io/horiseon-refactor-challenge01/">
+                <img />
+            </a>
+        </div>
+
+
     </section>
 
-    <section id="contact-me">
-        Contact Me
+    <section id="contact-me" class="contact-me">
+        <div class="flex-container">
+
+            <h2 class="flex-item section-title">
+                Contact Me
+            </h2>
+
+            <div class="flex-item">My Email:
+                <a href="mailto:caedmd2100gmail.com">
+                    caedmd2100@gmail.com
+                </a>
+            </div>
+            <br />
+
+            <div class="flex-item">Github:
+                <a href="https://github.com/EEzycade">
+                    github.com/EEzycade
+                </a>
+            </div>
+        </div>
+
     </section>
 
 </body>
