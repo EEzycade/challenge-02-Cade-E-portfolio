@@ -21,6 +21,7 @@ header {
     padding: 20px 30px;
     background-color: var(--primaryColor);
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header h1 {
@@ -61,14 +62,14 @@ header nav ul li a {
     background-position: center;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-.hero-blank {
-    width: 50%;
-}
+
 
 .hero-text {
-    width: 50%;
+    width: 100%;
     text-align: center;
 }
 
@@ -76,6 +77,7 @@ header nav ul li a {
     font-size: 48px;
     color: turquoise;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
 }
 /* hero style end */
 
@@ -85,6 +87,8 @@ header nav ul li a {
     font-size: 48px;
     font-weight: bolder;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    justify-content: center;
 }
 /* consolidate later */
 .about-me {
@@ -103,10 +107,24 @@ header nav ul li a {
     background-color: var(--secondaryColor);
 }
 
+.contact-me .flex-item {
+    width: 100%;
+}
+
+.contact-me .flex-item h3 {
+    padding-left: 25px;
+}
+
+.contact-me .flex-item a {
+    padding-left: 25px;
+}
+
 .flex-container {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .flex-item {
@@ -115,22 +133,22 @@ header nav ul li a {
 }
 
 .flex-container h2 {
-    justify-content: right;
-    text-align: right;
+    /* justify-content: right; */
 }
 
 .flex-container img {
-
+    
 }
 
 .flex-container p {
-    
+    max-width: 250px;
 }
 
 
 
 .my-work-container {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .image-gallery {
@@ -155,10 +173,19 @@ header nav ul li a {
 .image-gallery img {
     border: 3px solid #C63C25;
     border-radius: 25px;
+    width: 100%;
 }
 
 .thumbnail {
     
+}
+
+
+/* contact me style start*/
+
+.contact-me {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .contact-me a {
@@ -182,11 +209,20 @@ header nav ul li a {
     header h1 {
         width: 100%;
         text-align: center;
+        display: block;
     }
 
     header nav ul {
         margin-top: 20px;
         width: 100%;
+        justify-content: center;
+        display: block;
+        text-align: center;
+    }
+
+    .section-title {
+        width: 100%;
+        text-align: center;
         justify-content: center;
     }
 
