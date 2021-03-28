@@ -1,3 +1,4 @@
+/* universal styles start */
 :root {
     --primaryColor: turquoise;
     --secondaryColor: #404040;
@@ -9,32 +10,82 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Copperplate, Arial, sans-serif;
+}
+/* universal styles end */
+
+/* header styles start */
 header {
     display: flex;
     padding: 20px 30px;
     background-color: var(--primaryColor);
+    justify-content: space-between;
 }
 
 header h1 {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 42px;
     margin: 0;
 }
 
 header a {
     text-decoration: none;
-    color: #404040;
+    color: var(--secondaryColor);
+}
+
+header nav {
+    margin: 7px 0;
 }
 
 header nav ul {
     display: flex;
     list-style: none;
+    align-items: center;
 }
+
+header nav ul li a {
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+/* header style end */
+
+/* hero style start */
+.hero {
+    background-image: url("../images/hero.jpeg");
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.hero-blank {
+    width: 50%;
+}
+
+.hero-text {
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text h2 {
+    font-size: 48px;
+    color: turquoise;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    align-items: center;
+}
+/* hero style end */
+
 
 .section-title {
     color: turquoise;
     font-size: 48px;
     font-weight: bolder;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     /* margin-left: 20px; */
 }
 /* consolidate later */
@@ -58,21 +109,37 @@ header nav ul {
 
 .flex-item {
     padding: 20px 10px;
+    display: flex;
+}
+
+.image-gallery {
+    padding: 20px 10px;
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.thumbnail {
+    display: block;
 }
 
 .flex-container h2 {
-    align-items: auto;
+    justify-content: right;
     text-align: right;
-    padding-left: 100px;
+    width: 30%;
 }
 
 .flex-container img {
-    align-items: auto;
+    /* align-items: auto; */
 }
 
 .flex-container p {
-    align-items: flex-end;
+    /* padding-right: 40px; */
+    /* width: 30%; */
 }
+
+
 
 .my-work-container {
     display: flex;
